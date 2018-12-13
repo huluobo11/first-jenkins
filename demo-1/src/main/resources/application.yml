@@ -1,0 +1,21 @@
+server:
+  port: 8888
+spring:  datasource:    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/student?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root  jpa:    show-sql: true
+    database: mysql  profiles:    active: test
+  redis:
+    database: 0
+    host: localhost
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1
+        min-idle: 0
+    password: ''
+    port: 6379
+    timeout: 500
+
+    
