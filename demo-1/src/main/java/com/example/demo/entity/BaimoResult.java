@@ -14,12 +14,18 @@ public class BaimoResult {
 	public BaimoResult(BaimoResultEnum baimoResultEnum) {
 		this.code = baimoResultEnum.getCode();
 		this.flag = baimoResultEnum.getFlag();
-		this.data = baimoResultEnum.getMsg();
+		this.data = baimoResultEnum.getData();
 	}
 	
 	public BaimoResult(BaimoResultEnum baimoResultEnum, Object data) {
 		this.code = baimoResultEnum.getCode();
 		this.flag = baimoResultEnum.getFlag();
+		this.data = data;
+	}
+
+	public BaimoResult(Integer code, String flag, String data) {
+		this.code = code;
+		this.flag = flag;
 		this.data = data;
 	}
 }

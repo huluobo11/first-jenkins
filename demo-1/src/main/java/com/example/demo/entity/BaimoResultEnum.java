@@ -43,12 +43,12 @@ public enum BaimoResultEnum {
 
     private Integer code;
 
-    private String msg;
+    private String data;
 
     private String flag;
-    BaimoResultEnum(Integer code, String msg,String flag) {
+    BaimoResultEnum(Integer code, String data,String flag) {
         this.code = code;
-        this.msg = msg;
+        this.data = data;
         this.flag = flag;
     }
 
@@ -56,8 +56,8 @@ public enum BaimoResultEnum {
         return code;
     }
 
-    public String getMsg() {
-        return msg;
+    public String getData() {
+        return data;
     }
     public String getFlag() {
         return flag;
