@@ -3,8 +3,10 @@ package com.example.demo.exception;
 import com.example.demo.entity.BaimoResultEnum;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
+@EqualsAndHashCode(callSuper = false)
 public class UserException extends RuntimeException{                                    	
 
     private Integer code;
